@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <header>
+        <h1>Breast Cancer Detection System</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/predict">Predict</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Prediction Result</h2>
+        <p>The predicted diagnosis is: <strong>{{ prediction }}</strong></p>
+        <a href="/predict" class="button">Back to Prediction</a>
+        <a href="/" class="button">Home</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Breast Cancer Detection System</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Breast Cancer Detection</title>
+</head>
+<body>
+    <header>
+        <h1>Breast Cancer Detection System</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/predict">Predict</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to the Breast Cancer Detection System!</h2>
+        <p>This web application uses machine learning to predict breast cancer based on input features.</p>
+        <p>Click the button below to start predicting!</p>
+        <a class="button" href="/predict">Predict Breast Cancer</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Breast Cancer Detection System</p>
+    </footer>
+</body>
+</html>
