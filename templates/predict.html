@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Predict Breast Cancer</title>
+</head>
+<body>
+    <header>
+        <h1>Breast Cancer Detection System</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/predict">Predict</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Input Features for Prediction</h2>
+        <form method="POST">
+            <label>Radius Mean:</label><input type="number" name="radius_mean" step="any" required><br>
+            <label>Texture Mean:</label><input type="number" name="texture_mean" step="any" required><br>
+            <label>Perimeter Mean:</label><input type="number" name="perimeter_mean" step="any" required><br>
+            <label>Area Mean:</label><input type="number" name="area_mean" step="any" required><br>
+            <label>Smoothness Mean:</label><input type="number" name="smoothness_mean" step="any" required><br>
+            <label>Compactness Mean:</label><input type="number" name="compactness_mean" step="any" required><br>
+            <label>Concavity Mean:</label><input type="number" name="concavity_mean" step="any" required><br>
+            <label>Concave Points Mean:</label><input type="number" name="concave_points_mean" step="any" required><br>
+            <label>Symmetry Mean:</label><input type="number" name="symmetry_mean" step="any" required><br>
+            <label>Fractal Dimension Mean:</label><input type="number" name="fractal_dimension_mean" step="any" required><br>
+            <label>Radius SE:</label><input type="number" name="radius_se" step="any" required><br>
+            <label>Texture SE:</label><input type="number" name="texture_se" step="any" required><br>
+            <label>Perimeter SE:</label><input type="number" name="perimeter_se" step="any" required><br>
+            <label>Area SE:</label><input type="number" name="area_se" step="any" required><br>
+            <label>Smoothness SE:</label><input type="number" name="smoothness_se" step="any" required><br>
+            <label>Compactness SE:</label><input type="number" name="compactness_se" step="any" required><br>
+            <label>Concavity SE:</label><input type="number" name="concavity_se" step="any" required><br>
+            <label>Concave Points SE:</label><input type="number" name="concave_points_se" step="any" required><br>
+            <label>Symmetry SE:</label><input type="number" name="symmetry_se" step="any" required><br>
+            <label>Fractal Dimension SE:</label><input type="number" name="fractal_dimension_se" step="any" required><br>
+            <label>Radius Worst:</label><input type="number" name="radius_worst" step="any" required><br>
+            <label>Texture Worst:</label><input type="number" name="texture_worst" step="any" required><br>
+            <label>Perimeter Worst:</label><input type="number" name="perimeter_worst" step="any" required><br>
+            <label>Area Worst:</label><input type="number" name="area_worst" step="any" required><br>
+            <label>Smoothness Worst:</label><input type="number" name="smoothness_worst" step="any" required><br>
+            <label>Compactness Worst:</label><input type="number" name="compactness_worst" step="any" required><br>
+            <label>Concavity Worst:</label><input type="number" name="concavity_worst" step="any" required><br>
+            <label>Concave Points Worst:</label><input type="number" name="concave_points_worst" step="any" required><br>
+            <label>Symmetry Worst:</label><input type="number" name="symmetry_worst" step="any" required><br>
+            <label>Fractal Dimension Worst:</label><input type="number" name="fractal_dimension_worst" step="any" required><br>
+            <button type="submit" class="button">Predict</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Breast Cancer Detection System</p>
+    </footer>
+</body>
+</html>
